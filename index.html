@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="RU_ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Элитные дома</title>
+    
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        
+        <nav id="topNav" class="topNav navbar navbar-dark bg-black navbar-fixed-top">
+            <div class="content-wrapper">
+                <a class="navbar-brand pull-left" href="#">
+                    <img src="assets/img/home-logo.svg" alt="">
+                    <span>Терем</span>
+                </a>
+                <div class="collapse-button-cover"></div>
+                <button class="gh-svg-wrapper navbar-toggler hidden-md-up" data-toggle="collapse" data-target="#collapsingNavbar" id='collapse-button'>
+                  <svg x="0px" y="0px" width="100%" viewBox="0 0 96 96" class="gh-svg gh-svg-top" enable-background="new 0 0 96 96">
+                    <rect width="32" height="4" x="32" y="46" class="gh-svg-rect gh-svg-rect-top"></rect>
+                  </svg>
+                  <svg x="0px" y="0px" width="100%" viewBox="0 0 96 96" class="gh-svg gh-svg-bottom" enable-background="new 0 0 96 96">
+                    <rect width="32" height="4" x="32" y="46" class="gh-svg-rect gh-svg-rect-bottom"></rect>
+                  </svg>
+                </button>
+                <div class="topNav-inline hidden-sm hidden-xs">
+                    <ul class="nav navbar-nav lead row">
+                        <li class="nav-item col-xs show text-xs-center" id="link1">
+                            <a class="nav-link" href="#one">Бани</a>
+                        </li>
+                        <li class="nav-item col-xs show text-xs-center" id="link2">
+                            <a class="nav-link" href="#two">Беседки</a>
+                        </li>
+                        <li class="nav-item col-xs show text-xs-center" id="link3">
+                            <a class="nav-link" href="#three">Коттеджи</a>
+                        </li>
+                        <li class="nav-item col-xs show text-xs-center" id="link4">
+                            <a class="nav-link" href="#four">Дома</a>
+                        </li>
+                        <li class="nav-item col-xs show text-xs-center" id="link5">
+                            <a class="nav-link" href="#five">Nav-item</a>
+                        </li>
+                        <li class="nav-item col-xs show text-xs-center" id="link6">
+                            <a class="nav-link" href="#six">Nav-item</a>
+                        </li>
+                        <li id="search-button" class="col-xs-1 text-xs-right">
+                            <div class="search-button-wrapper"><button class="loupe"></button></div>
+                        </li>
+                    </ul>
+                    <div class="col-xs-12 form-wrapper">
+                        <form class="form-inline flex-items-xs-middle search-box" id="search-box" data-state="closed">
+                            <div class="button-wrapper"><button class="search-box-button" type="submit"></button></div>
+                            <input class="search-box-input" type="search" placeholder="Начните поиск здесь" name="search" autocomplete="off">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="collapseMenu disabled navbar-toggleable-sm" id="collapsingNavbar">
+            <ul class="nav navbar-nav navbar-nav-ul lead">
+                <li class="nav-item col-xs">
+                    <a class="nav-link" href="#one">Бани1</a>
+                </li>
+                <li class="nav-item col-xs">
+                    <a class="nav-link" href="#two">Беседки1</a>
+                </li>
+                <li class="nav-item col-xs">
+                    <a class="nav-link" href="#three">Коттеджи1</a>
+                </li>
+                <li class="nav-item col-xs">
+                    <a class="nav-link" href="#four">Дома1</a>
+                </li>
+                <li class="nav-item col-xs">
+                    <a class="nav-link" href="#four">Nav-item1</a>
+                </li>
+                <li class="nav-item col-xs">
+                    <a class="nav-link" href="#four">Nav-item1</a>
+                </li>
+                <li class="nav-item col-xs">
+                    <form class="form-inline search-box" id="search-box">
+                        <button class="search-box-button" type="submit"></button>
+                        <input class="search-box-input" type="search" placeholder="Начните поиск здесь" name="search" autocomplete="off">
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <nav id="additionalNav" class="additionalNav">
+                <ul id="additionalNavSlider" class="nav navbar-nav bxslider">
+                    <li class="nav-item item">
+                        <a class="nav-item-link" href="#">
+                            <div class="nav-item-icon icon-house1"></div>
+                            <span class="nav-item-label">Лайнер2</span>
+                        </a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-item-link" href="#">
+                            <div class="nav-item-icon icon-house2"></div>
+                            <span class="nav-item-label">Канцлер</span>
+                        </a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-item-link" href="#">
+                            <div class="nav-item-icon icon-house3"></div>
+                            <span class="nav-item-label">Варяг</span>
+                        </a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-item-link" href="#">
+                            <div class="nav-item-icon icon-house4"></div>
+                            <span class="nav-item-label">Император</span>
+                        </a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-item-link" href="#">
+                            <div class="nav-item-icon icon-house5"></div>
+                            <span class="nav-item-label">Гранд</span>
+                        </a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-item-link" href="#">
+                            <div class="nav-item-icon icon-house6"></div>
+                            <span class="nav-item-label">Генерал</span>
+                        </a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-item-link" href="#">
+                            <div class="nav-item-icon icon-house6"></div>
+                            <span class="nav-item-label">Nav-item</span>
+                        </a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-item-link" href="#">
+                            <div class="nav-item-icon icon-house6"></div>
+                            <span class="nav-item-label">Nav-item</span>
+                        </a>
+                    </li>
+                    <li class="nav-item item">
+                        <a class="nav-item-link" href="#">
+                            <div class="nav-item-icon icon-house6"></div>
+                            <span class="nav-item-label">Nav-item</span>
+                        </a>
+                    </li>
+                </ul>
+            <div class="customNavigation">
+                <a class="btn customNavigation-btn prev" id="slider-prev"></a>
+                <a class="btn customNavigation-btn next" id="slider-next"></a>
+            </div>
+        </nav> 
+    </header><!-- End of header -->
+    <!-- Main content block -->
+    <main id="main" class="main" role="main">
+        <!-- Slider -->
+        <section class="slider gallery">
+            <article class="gallery-container">
+                <ul id="gallerySlider">
+                    <li class="gallery-item">
+                        <div class="row description-block">
+                            <div class="col-xs-12 dark-theme">
+                                <h1>Лайнер</h1>
+                                <h2>Просто Лайнер.</h2>
+                                <p>
+                                    <a href="#" class="more-link">Подробнее</a>
+                                    <a href="#" class="more-link">Купить</a>
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#"><div class="gallery-image gallery-image-house1"></div></a>
+                    </li>
+                    <li class="gallery-item">
+                        <div class="row description-block">
+                            <div class="col-xs-12 dark-theme">
+                                <h1>Лидер</h1>
+                                <h2>Он один такой. <br>
+                                    Уникальный.
+                                </h2>
+                                <p>
+                                    <a href="#" class="more-link">Подробнее</a>
+                                    <a href="#" class="more-link">Купить</a>
+                                </p>
+                            </div>
+                        </div>
+                         <a href="#"><div class="gallery-image gallery-image-house2"></div></a>
+                    </li>
+                    <li class="gallery-item">
+                        <div class="row description-block">
+                            <div class="col-xs-12 dark-theme">
+                                <h1>Изысканность во всем</h1>
+                                <h2>Уют может быть красивым.
+                                </h2>
+                                <p>
+                                    <a href="#" class="more-link">Подробнее</a>
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#"><div class="gallery-image gallery-image-house3"></div></a>
+                    </li>\<li class="gallery-item">
+                        <div class="row description-block">
+                            <div class="col-xs-12 dark-theme">
+                                <h1>Дом там, где хорошо</h1>
+                                <h2>А хорошо может быть только в наших домах.
+                                </h2>
+                                <p>
+                                    <a href="#" class="more-link">Подробнее</a>
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#"><div class="gallery-image gallery-image-house4"></div></a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="section-promos">
+            <div class="section-promos-container max-width">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 description-wrapper description-wrapper">
+                        <div class="row description-block description-block-left">
+                            <div class="col-xs-12">
+                                <h3>Идеальный Дом</h3>
+                                <h2>Никаких скрытых проблем.<br>
+                                    Никаких скрипов.<br>
+                                    Только тепло и уют.
+                                </h2>
+                                <p>
+                                    <a href="#" class="more-link">В каталог</a>
+                                </p>
+                            </div>
+                            <div class="col-xs-12">
+                                <a href="#"><div class="section-promos-image section-promos-image-img1"></div></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 col-sm-12 description-wrapper description-wrapper">
+                        <div class="row description-block description-block-right text-white">
+                            <div class="col-xs-12 ">
+                                <h3>Архитектурное бюро</h3>
+                                <h2>Создай дом своей мечты.
+                                </h2>
+                                <p>
+                                    <a href="#" class="more-link">Подробнее</a>
+                                </p>
+                            </div>
+                            <div class="col-xs-12">
+                                <a href="#"><div class="section-promos-image section-promos-image-img2"></div></a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="compare-block">
+            <div class="compare-block-container max-width">
+                <div class="row">
+                    <div class="title-block">
+                        <h1>Сравните наши дома</h1>
+                        <p>
+                            <a href="#" class="more-link">Выберите свой дом</a>
+                        </p>
+                    </div>
+                </div> 
+                <div class="row">   
+                    <div class="col-lg-3 compare-block-item hidden-md-down">
+                        <a href="#">
+                            <div class="compare-block-image compare-block-image-img1">
+                                <img src="assets/img/house-card-item.png" alt="">
+                            </div>
+                            <span class="img-caption">Гранд</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 compare-block-item hidden-md-down">
+                        <a href="#">
+                            <div class="compare-block-image compare-block-image-img1">
+                                <img src="assets/img/house-card-item.png" alt="">
+                            </div>
+                            <span class="img-caption">Лидер</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 compare-block-item hidden-md-down">
+                        <a href="#">
+                            <div class="compare-block-image compare-block-image-img1">
+                                <img src="assets/img/house-card-item.png" alt="">
+                            </div>
+                            <span class="img-caption">Канцлер</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 compare-block-item hidden-md-down">
+                        <a href="#">
+                            <div class="compare-block-image compare-block-image-img1">
+                                <img src="assets/img/house-card-item.png" alt="">
+                            </div>
+                            <span class="img-caption">Премьер</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 hidden-lg-up">
+                        <a href="#">
+                            <div class="compare-block-image compare-block-image-img1">
+                                <img src="assets/img/house-card-item.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+            </div>
+        </section>
+
+        <section class="pros-block">
+            <div class="pros-block-container">
+                <div class="row">
+                    <div class="col-xs-12 pros-block-item">
+                        <div class="pros-block-item-wrapper">
+                            <span class="block-icon"></span>
+                            <h2>Бесплатная консультация</h2>
+                            <p>При первом обращении мы проконсультируем вас совершенно бесплатно.</p>
+                            <p><a href="#" class="more-link">Подробнее</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="product-block">
+            <div class="product-block-container max-width">
+                <div class="row product-block-wrapper">
+                    <div class="col-xs-12 col-md-4 item-wrapper">
+                        <div class="product-block-item">
+                            <h2>Как выбрать дом?</h2>
+                            <p><a href="#" class="more-link">Подробнее</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 offset-md-4 item-wrapper">
+                        <div class="product-block-item">
+                            <h2>Критерии выбора.</h2>
+                            <p><a href="#" class="more-link">Подробнее</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offer-block">
+            <div class="offer-block-container max-width">
+                <div class="row offer-block-wrapper">
+                    
+                    <div class="col-md-6 push-md-6 col-xs-12 item-wrapper info-block">
+                        <div class="offer-block-item">
+                            <div class="text-wrapper">
+                                <h2><span class="logo"></span>Терем</h2>
+                                <p>Наши дома – это умелое сочетание хорошего качества и эстетического наслаждения архитектурными формами. Отточенный технологический процесс является тем стержнем, на котором держится высокое качество домов компании «Теремъ».</p>
+                                <p><a href="#" class="more-link">Подробнее</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pull-md-6 col-xs-12 item-wrapper">
+                        <div class="offer-block-item">
+                            <img src="assets/img/apple_pay_large.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-md hidden-sm-down max-width">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#" class="logo"></a></li>
+                          <li class="breadcrumb-item active">Лидер</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <h5>Выбирайте и покупайте</h5>
+                        <ul>
+                          <a href="#"><li>Премьер</li></a>
+                          <a href="#"><li>Канцлер</li></a>
+                          <a href="#"><li>Император</li></a>
+                          <a href="#"><li>Генерал</li></a>
+                          <a href="#"><li>Монарх</li></a>
+                      </ul>
+                    </div>
+                    <div class="col-sm">
+                        <h5>Terem Store</h5>
+                        <ul>
+                            <a href="#"><li>Варианты оплаты</li></a>
+                            <a href="#"><li>Состояние заказа</li></a>
+                            <a href="#"><li>Помощь при покупке</li></a>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <h5>Каталог</h5>
+                        <ul>
+                          <a href="#"><li>List-item-bla</li></a>
+                          <a href="#"><li>List-item-bla</li></a>
+                          <a href="#"><li>List-item</li></a>
+                          <a href="#"><li>List-item-bla-bla</li></a>
+                          <a href="#"><li>List-item</li></a>
+                      </ul>
+                    </div>
+                    <div class="col-sm">
+                        <h5>Ценности Теремъ</h5>
+                        <ul>
+                            <a href="#"><li>Индивидуальный подох</li></a>
+                            <a href="#"><li>Окружающая среда</li></a>
+                            <a href="#"><li>Гарантии</li></a>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <h5>О компании Теремъ</h5>
+                        <ul>
+                            <a href="#"><li>Вакансии</li></a>
+                            <a href="#"><li>Информация для прессы</li></a>
+                            <a href="#"><li>Гарантия</li></a>
+                            <a href="#"><li>Презентации</li></a>
+                            <a href="#"><li>Контактная информация</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-12 copyright">
+                        <p>© Теремъ-про, 2009 - 2016. Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается копирование, распространение (в том числе путем копирования на другие сайты и ресурсы в Интернете) или любое иное использование информации и объектов без предварительного согласия правообладателя. Cайт не является публичной офертой.</p>
+                    </div>
+                </div>
+            </div>         
+        </div>
+
+        <div class="footer-sm hidden-md-up">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#" class="logo"></a></li>
+                          <li class="breadcrumb-item active">Лидер</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="accordion" role="tablist" aria-multiselectable="true" class="list-group">
+        
+                  <div class="panel panel-default list-group-item">
+                    <span class="pull-xs-right list-toggler">+</span>
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                           aria-expanded="false" aria-controls="collapseOne">
+                          Выбирайте и покупайте
+                        </a>
+                      </h4>
+                    </div>
+
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                      <ul>
+                          <a href="#"><li>Премьер</li></a>
+                          <a href="#"><li>Канцлер</li></a>
+                          <a href="#"><li>Император</li></a>
+                          <a href="#"><li>Генерал</li></a>
+                          <a href="#"><li>Монарх</li></a>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default list-group-item">
+                    <span class="pull-xs-right list-toggler">+</span>
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                           aria-expanded="false" aria-controls="collapseTwo">
+                          Terem Store
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <ul>
+                        <a href="#"><li>Варианты оплаты</li></a>
+                        <a href="#"><li>Состояние заказа</li></a>
+                        <a href="#"><li>Помощь при покупке</li></a>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default list-group-item">
+                    <span class="pull-xs-right list-toggler">+</span>
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                           aria-expanded="false" aria-controls="collapseThree">
+                          Каталог
+                        </a>
+                      </h4>
+                    </div>
+
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <ul>
+                        <a href="#"><li>List-item-bla</li></a>
+                        <a href="#"><li>List-item-bla</li></a>
+                        <a href="#"><li>List-item</li></a>
+                        <a href="#"><li>List-item-bla-bla</li></a>
+                        <a href="#"><li>List-item</li></a>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default list-group-item">
+                    <span class="pull-xs-right list-toggler">+</span>
+                    <div class="panel-heading" role="tab" id="headingFour">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+                           aria-expanded="false" aria-controls="collapseFour">
+                          Ценности Теремъ
+                        </a>
+                      </h4>
+                    </div>
+
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                      <ul>
+                          <a href="#"><li>Индивидуальный подох</li></a>
+                          <a href="#"><li>Окружающая среда</li></a>
+                          <a href="#"><li>Гарантии</li></a>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default list-group-item">
+                    <span class="pull-xs-right list-toggler">+</span>
+                    <div class="panel-heading" role="tab" id="headingFive">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"
+                           aria-expanded="false" aria-controls="collapseFive">
+                          О компании Теремъ
+                        </a>
+                      </h4>
+                    </div>
+
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                      <ul>
+                          <a href="#"><li>Вакансии</li></a>
+                          <a href="#"><li>Информация для прессы</li></a>
+                          <a href="#"><li>Гарантия</li></a>
+                          <a href="#"><li>Презентации</li></a>
+                          <a href="#"><li>Контактная информация</li></a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 copyright">
+                        <p>© Теремъ-про, 2009 - 2016. Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается копирование, распространение (в том числе путем копирования на другие сайты и ресурсы в Интернете) или любое иное использование информации и объектов без предварительного согласия правообладателя. Cайт не является публичной офертой.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Styles-->
+    <link rel="stylesheet" type="text/css" href="assets/css/app.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.bxslider.css">
+    <!-- <link href="assets/css/select2.min.css" rel="stylesheet" /> -->
+    <!--Scripts-->    
+    
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script><!-- Tether for Bootstrap --> 
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.bxslider.js"></script>
+    <!-- <script src="assets/js/select2.min.js"></script> -->
+    <script src="assets/js/app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "name": "terempro",
+  "version": "1.0.0",
+  "description": "temp projects on Terem Pro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DVysotskiy",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.17.0",
+    "browserify": "^13.1.0",
+    "buffer": "^5.0.0",
+    "graceful-fs": "^4.1.9",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-jshint": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "jshint": "^2.9.3",
+    "rename": "^1.0.3",
+    "source": "0.0.3",
+    "uglify": "^0.1.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

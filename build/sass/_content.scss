@@ -1,0 +1,543 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13.10.2016, 18:38:32
+    Author     : Vysotsky.D
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&subset=cyrillic');
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    font-family: "Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    background: #F2F2F2;
+}
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #001A33;
+    top:0;
+    min-width: 320px;
+    background: black;
+}
+
+a {
+    color: #007FFF;
+    transition: all .35s;
+}
+
+a:hover,
+a:focus {
+    color: #222;
+    outline: 0;
+}
+
+h1, h2 {
+   font-weight: 100 !important; 
+}
+
+// Classes
+.show {
+    display: block !important;
+}
+
+.hide-scrollbar {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none !important;
+}
+.transition {
+    transition: all ease-out .3s;
+}
+
+.main {
+    display: block;
+    z-index: 1;
+    background: #F2F2F2;
+}
+
+.more-link {
+    font-size: 1.5em;
+    text-decoration: none !important;
+    margin: 0 5px;
+    &:after {
+        content: '›';
+        font-size: 1.5em;
+        font-stretch: ultra-condensed;
+        margin-left: 5px;
+        position: relative;
+        top: 3px;
+    }
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.max-width {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1350px;
+}
+
+// Gallery Slider
+.gallery {
+    margin-bottom: 50px;
+}
+.gallery-container {
+    height: 100vh;
+    min-height: 540px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    .gallery-item {
+        & .description-block {
+            position: absolute;
+            margin: 0 auto;
+            top: 3em;
+            left: 50%;
+            color: #fff;
+            transform: translatex(-50%);
+            text-align: center;
+        }
+        & .gallery-image {
+            display: block;
+            height: 100vh;
+            background-size: cover !important;
+            background-position: 50% 50% !important;
+            background-repeat: no-repeat !important;    
+            &-house1 {
+                background: url('../img/krepysh_k-150lk_1.jpg');
+            }
+            &-house2 {
+                background: url('../img/krepysh_b-150_1.jpg');
+            }
+            &-house3 {
+                background: url('../img/da698d37ba80a4bff51c6a81aea1b53e.jpg');
+            }
+            &-house4 {
+                background: url('../img/322bbe1f2076e7cebd3103ec9bd943d2.jpg');
+            }
+        }
+    }
+}
+
+//Section Promos
+.section-promos {
+    margin-bottom: 50px;
+    overflow: hidden;
+    &-container {
+        max-height: 100%;
+        min-height: 540px;
+        width: 100%;
+        position: relative;
+        left: 0;
+        right: 0;
+        & .row {
+            display: block !important;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    & .description-wrapper {
+        width: 100%;
+        height: 712px;
+        // overflow: hidden;
+        text-align: center;
+        padding: 0;
+        box-sizing: content-box;
+        // margin: 10px 30px;
+        & .description-block {
+            position: relative;
+            width: auto;
+            height: inherit;
+            &-left {
+                margin-right: 25px;
+                background: #fff;
+            }
+            &-right {
+                margin-left: 25px;
+                background: #000;
+                // position: relative;
+                // right: -165px;
+            }
+            & h3 {
+                font-weight: 700;
+            }
+            & .col-xs-12 {
+                &:first-of-type {
+                    height: 30%;
+                    padding-top: 40px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    box-sizing: border-box;
+                }
+                &:last-of-type {
+                    height: 70%;
+                    padding: 0;
+                }
+            }
+        }
+        & .section-promos-image {
+            display: block;
+            width: auto;
+            height: 100%;
+            background-size: contain !important;
+            background-repeat: no-repeat !important;
+            background-position: center center !important;
+            &-img1 {
+                background: url('../img/house-for-promos-block.png');
+            }
+            &-img2 {
+                background: url('../img/depositphotos_53767639-Abstract-sketch-design-of-house.jpg');
+            }
+        }
+    }
+
+}
+
+//Compare block
+.compare-block {
+    margin-bottom: 50px;
+    // & .container {
+    //     background: #fff;
+    //     text-align: center;
+    // }
+    &-container {
+        width: 100%;
+        height: auto;
+        padding: 80px 20px;
+        position: relative;
+        left: 0;
+        right: 0;
+        background: #fff;
+        text-align: center;
+        
+        
+        & .title-block {
+            position: relative;
+            width: auto;
+            height: auto;
+            margin-bottom: 2em;
+            margin: 0 auto;
+            & h1 {
+              text-align: center;  
+            }
+        }
+        & .compare-block-item {
+            & a {
+                text-decoration: none;
+            }
+        }
+        & .compare-block-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0 5px;
+            background-size: contain !important;
+            background-position: 0 0 !important;
+            background-repeat: no-repeat !important;
+            & img {
+                width: 100%;
+                max-width: 200px;
+                &:last-of-type {
+                    width: 250px;
+                }
+            }
+        }
+        & .img-caption {
+            position: relative;
+            left: 0;
+            right: 0;
+            color: #000;
+            font-size: 1.5em;
+            
+        }
+    }
+}
+
+// Pros block
+.pros-block {
+    margin-bottom: 50px;
+    &-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 30px 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        & .row {
+            margin: 0 !important;
+        }
+    }
+    &-item-wrapper {
+        width: auto;
+        margin: 0 auto;
+        & .block-icon {
+            display: block;
+            background: url('../img/info.png');
+            width: 3em;
+            height: 3em;
+            margin: 0 auto;
+        }
+        & p, a {
+            font-size: 1.2em;
+            margin: 0;
+        }
+    }
+}
+
+//Product-block
+.product-block {
+    margin-bottom: 50px;
+    &-container {
+        width: 100%;
+        height: auto;
+        min-height: 712px;
+        padding: 0px;
+        position: relative;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background: url('../img/1147_0fcc6a2f5a701f5db94fad4f9750ba75.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    & .row {
+        display: block;
+        margin: 0; 
+    }
+    &-wrapper {
+        height: 712px;
+        position: relative;
+        padding-top: 300px;    
+    }
+}
+
+// Offer block
+.offer-block {
+    background: #FAFAFA;
+    &-container {
+        max-height: 100%;
+        min-height: 540px;
+        width: 100%;
+        position: relative;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    & .row {
+        display: block;
+        margin: 0; 
+    }
+    &-wrapper {
+        min-height: 540px;
+        padding-top: 130px;
+    }
+    & .item-wrapper {
+        height: auto;
+    }
+    & .info-block {
+        margin-bottom: -80px;
+        z-index: 1;
+    }
+    &-item {
+        position: relative;
+        min-height: 350px;
+        height: 100%;
+        width: 100%;
+        min-width: 300px;
+        & .text-wrapper {
+            width: 50%;
+            min-width: 300px
+        }
+        & h2 {
+            font-size: 2.5em;
+            font-weight: 400 !important;
+            font-stretch: extra-condensed;
+        }
+        & p, a {
+            font-size: 1em;
+        }
+        & img {
+            position: relative;
+            right: -100px;
+            z-index: 0;
+        }
+        & .logo {
+            display: inline-block;
+            background: url('../img/home-logo.png');
+            background-size: cover;
+            width: .8em;
+            height: .8em;
+            filter: invert(100%);
+            position: relative;
+            top: 2px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.dark-theme {
+    color: #000;
+}
+
+.bx-wrapper {
+    margin-bottom: 15px;
+}
+
+.bx-wrapper .bx-viewport {
+    left: 0px !important;
+    box-shadow: none !important;
+    border: 0px !important;
+    background: none !important;
+}
+
+.bx-controls {
+    position: relative;
+    top: -3em;
+    & .bx-pager-item {
+        filter: invert(100%);
+    }
+    & .bx-controls-direction {
+        & .bx-prev {
+            filter: invert(100%);
+        }
+        & .bx-next {
+            filter: invert(100%);
+        }
+    }
+}
+
+.footer {
+    padding-top: 50px;
+    background: #F2F2F2;
+    & .breadcrumb-item+.breadcrumb-item::before {
+        content: '' !important;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 3px;
+        background: url('../img/next.png') !important;
+        background-size: contain !important;
+        background-position: center center !important;
+        position: relative;
+        top: 3px;
+        filter: contrast(1%);
+        margin-right: 3px;
+    }
+    & .footer-md {
+        width: 80%;
+    }
+    &-container {
+        height: auto;
+        width: 100%;
+        position: relative;
+        left: 0;
+        right: 0;
+        padding: 0 20px;
+    }
+    & .breadcrumb {
+        background: none;
+        padding: 0;
+    }
+    & .logo {
+        display: inline-block;
+        background: url('../img/home-logo.png');
+        background-size: cover;
+        width: 1em;
+        height: 1em;
+        filter: invert(100%);
+        filter: contrast(0);
+        position: relative;
+        margin-right: 5px;
+        top: 3px;
+    }
+    & h5 {
+        font-size: 0.7em;
+        font-weight: 700;
+    }
+    & ul {
+        list-style: none;
+        font-size: 0.7em;
+        font-weight: 400;
+        & li {
+            margin: 3px 0;
+        }
+        & a {
+            color: #666;
+        }
+    }
+    & .copyright {
+        font-size: 0.7em;
+        color: #666;
+    }
+    & .footer-sm {
+        & .footer-container {
+            & .panel-heading {
+                .panel-title {
+                    margin-bottom: 0 !important;
+                    padding-bottom: .5rem;
+                }
+            }
+        }
+        & .list-group-item {
+            background: none;
+            border: 0;
+            border-bottom: 1px solid #ddd;
+            padding: .25rem 0;
+            & .list-toggler {
+                transition: all ease-in .3s;
+            }
+            & .list-toggler-active {
+                transform: rotate(45deg);
+                transform-origin: 50% 55%;
+                transition: all ease-in .3s;
+            }
+            &:first-of-type {
+                border-top: 1px solid #ddd;  
+            }
+            & span {
+                position: relative;
+                top: 5px;
+                font-weight: 400;
+            }
+            & a {
+                color: #666;
+                font-size: 0.8rem;
+                text-decoration: none;
+            }
+            & ul {
+                margin-left: 1em;
+                & a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        & .collapsed {
+            font-weight: 400;
+        }
+        & .copyright {
+            margin-top: 2em;
+        }
+    }
+}

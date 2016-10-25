@@ -1,0 +1,120 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 14, 2016, 10:08:12 AM
+    Author     : Vysotsky.D
+*/
+
+@media(min-width: 768px) {
+    .navbar-nav-ul {
+        display: none !important;
+    }
+}
+
+@media(max-width: 767px) {
+    
+    .gallery-container {
+        height: 80vh;
+        & .gallery-image {
+            height: 80vh;
+        }
+    }
+    .content-wrapper {
+        margin: 0 auto !important;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    
+    .navbar-brand {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translatex(-50%);
+        margin: 0 auto;
+        z-index: 10;
+    }
+    
+    .topNav-inline {
+        display: none;
+    }
+    
+    .bx-prev, .bx-next {
+        display: block !important;
+    }
+    
+
+    .description-wrapper {
+        margin: 5px 0 !important;
+    }
+    
+    .compare-block-container {
+        padding-bottom: 0;
+    }
+    
+    .gallery {
+        margin-bottom: 0;
+        & .bx-wrapper {
+            margin-bottom: 0;
+        }
+    }
+
+    .section-promos,
+    .compare-block,
+    .pros-block {
+        margin-bottom: 5px;
+    }
+    
+    .product-block {
+        margin-bottom: 10px;
+    }
+
+    .offer-block {
+        margin-bottom: 0;
+    } 
+
+    .section-promos {
+        .description-block-left, .description-block-right {
+            margin: 0 !important;
+        }
+    }
+
+    .product-block-container {
+        & .product-block-wrapper {
+            padding: 0;
+
+            & .item-wrapper:first-of-type {
+                padding-top: 40px;
+            }
+            & .item-wrapper:last-of-type {
+                height: 78%;
+                & .product-block-item {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 0;
+                    right: 0;
+                }
+            }
+        } 
+    }
+
+    .offer-block {
+        &-wrapper {
+            padding-top: 60px;
+        }
+        & .text-wrapper {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        & .offer-block-item img {
+            position: relative;
+            right: 0;
+            z-index: 0;
+            width: 100%;
+        }        
+    }
+}
